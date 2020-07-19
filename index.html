@@ -181,7 +181,7 @@
         async function loadModel() {
             model = await tf.loadModel('model/model.json')
                 //warm up 
-            model.predict(tf.zeros([32, 32, 3]))
+            model.predict(tf.zeros([null, 32, 32, 3]))
             allowDrawing()
             await loadDict()
         }
