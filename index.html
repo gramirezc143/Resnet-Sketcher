@@ -179,7 +179,7 @@
 
         //load the model 
         async function loadModel() {
-            model = await tf.loadModel('./model/model.json')
+            model = await tf.loadModel('C:\Users\Usuario\Documents\Inteligencia Artificial\Tarea ResNet-Sketcher\Sketcher\model\model.json')
                 //warm up 
             model.predict(tf.zeros([null, 32, 32, 3]))
             allowDrawing()
